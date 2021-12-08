@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="webqlnk" transaction-type="RESOURCE_LOCAL">
+		<class>model.Account</class>
+		<class>model.Booking</class>
+		<class>model.BookingDetail</class>
+		<class>model.Comment</class>
+		<class>model.Commune</class>
+		<class>model.CustomerProfile</class>
+		<class>model.DentistProfile</class>
+		<class>model.District</class>
+		<class>model.EWallet</class>
+		<class>model.HistoryWallet</class>
+		<class>model.Like</class>
+		<class>model.Post</class>
+		<class>model.Province</class>
+		<class>model.Role</class>
+		<class>model.ScheduleTime</class>
+		<class>model.Service</class>
+		<class>model.VerifycationToken</class>
+		<class>model.Voucher</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/graduation_pro_1"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="javax.persistence.jdbc.password" value="123456"/>
+		</properties>
+	</persistence-unit>
+</persistence>
